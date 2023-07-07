@@ -1,0 +1,14 @@
+
+sourceSets.main.studentJava.files = [
+    'graphs/shortestpaths/DijkstraShortestPathFinder.java',
+    'graphs/minspantrees/KruskalMinimumSpanningTreeFinder.java',
+    'mazes/logic/carvers/KruskalMazeCarver.java',
+    'disjointsets/UnionBySizeCompressingDisjointSets.java',
+]
+
+allprojects {
+    dependencies {
+        implementation project(':heap')
+        implementation group: 'com.github.ArlindNocaj', name: 'power-voronoi-diagram', version: '-SNAPSHOT'
+    }
+}
